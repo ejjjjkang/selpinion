@@ -1,0 +1,68 @@
+{
+  "Name": "Eun",
+  "Opinion": "집 가고 싶다",
+  "Result": {
+    "0": "positive",
+    "1": 0.78
+  },
+  "Sub": [
+    {
+      "Type": "concept",
+      "Opinion": "왜냐하면 집 가고 싶으니까",
+      "Result": {
+        "0": "Negative",
+        "1": 0.78
+      }
+    },
+    {
+      "Type": "reason",
+      "Opinion": "왜냐하면 집 가고 싶으니까",
+      "Result": {
+        "0": "positive",
+        "1": 0.78
+      }
+    },
+    {
+      "Type": "furtherReason",
+      "Opinion": "왜냐하면 집 가고 싶으니까",
+      "Result": {
+        "0": "positive",
+        "1": 0.78
+      }
+    },
+    {
+      "Type": "conclusion",
+      "Opinion": "왜냐하면 집 가고 싶으니까",
+      "Result": {
+        "0": "Negative",
+        "1": 0.78
+      }
+    }
+  ],
+  "OtherOpinion": [
+    {
+      "Name": "Yun",
+      "Opinion": "왜냐하면 집 가고 싶으니까",
+      "Result": {
+        "0": "positive",
+        "1": 0.78
+      }
+    },
+    {
+      "Name": "Sun",
+      "Opinion": "왜냐하면 집 가고 싶으니까",
+      "Result": {
+        "0": "positive",
+        "1": 0.78
+      }
+    },
+    {
+      "Name": "Mia",
+      "Opinion": "왜냐하면 집 가고 싶으니까",
+      "Result": {
+        "0": "positive",
+        "1": 0.78
+      }
+    }
+  ]
+}

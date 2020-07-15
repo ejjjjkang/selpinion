@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>OpenDiscussion</title>
+    <script src="https://d3js.org/d3-hierarchy.v1.min.js"></script>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+
+  
+   
+    <!-- Compiled and minified CSS -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ 
+  </head>
+  <body>
+    
+    <nav>
+      <div class="nav-wrapper  grey darken-4">
+        <a href="#" class="brand-logo">CrowDiscussion</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="sass.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <div class="video-container">
+            <div class="player_layer">
+              <a class="waves-effect waves-light btn btn_ continue"
+                >이어서 보기</a
+              >
+            </div>
+            <div id="player"></div>
+          </div>
+        </div>
+    </div>
+    <div class="card_board"></div>
+    <div class="board">
+      
+      
+      <div class="row">
+        
+        <div class="col s5 comment_container">
+
+          <!-- 전체 댓글 편향성 추측도
+            <label class="persuasive_label">AI가 <span>0</span>% 의 편향성을 가지고 있다고 판단했어요!
+              <progress class="progress_bar" max="100" value="20"><progress>
+              </label> -->
+
+        <div class="comment_container_overview"> 
+          댓글 리스트
+          <div class="comment_container_overview_result"></div>
+          <div class="comment_container_overview_result_persuasive"></div>
+        </div>
+        </div>
+        <div class="col s7 comment_container_box">
+            <!-- <div class="comment_container"> -->
+              <!-- <svg id="bar-chart"></svg> -->
+
+
+            <!-- </div>  -->
+        </div>
+      </div>
+     
+    </div>
+    <footer class="page-footer grey darken-3">
+      <div class="footer-copyright">
+        <div class="container">
+          © 2020 Copyright Eun Kang
+        </div>
+      </div>
+    </footer>
+  </body>
+  
+</html>

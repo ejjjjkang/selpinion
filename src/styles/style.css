@@ -1,0 +1,232 @@
+body {
+}
+
+nav .brand-logo {
+  padding-left: 3%;
+}
+
+.btn_ {
+  z-index: 2;
+}
+
+.continue {
+  display: none;
+
+  width: 100px;
+  margin: -20px -50px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+}
+.video-container {
+  margin: 3%;
+}
+
+#player_layer {
+  /* background-color: black; */
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+
+  display: none;
+}
+
+.btn {
+  left: 55%;
+}
+
+.comment_container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  padding-bottom: 100%;
+}
+
+.commentList_box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.persuasive_label {
+  /* position: absolute; */
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  padding: 0 0.5em;
+  line-height: 1.5;
+  font-size: 80%;
+  font-weight: bold;
+}
+
+/* determinate progress bar */
+progress[value] {
+  /*  
+  position: absolute; */
+  /* Reset the default appearance */
+  /* reset 후에는 자연스럽게 초록색 바가 나옴 */
+  /* https://css-tricks.com/html5-progress-element/ */
+  -webkit-appearance: none;
+  appearance: none;
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+  height: 2em;
+}
+
+/* progress background color */
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(
+      /* -45deg,
+      transparent 33%,
+      rgba(0, 0, 0, 0.1) 33%,
+      rgba(0, 0, 0, 0.1) 66%,
+      transparent 66% */
+    ),
+    -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)),
+    -webkit-linear-gradient(left, #09c, #f44);
+  background-color: rgb(35, 43, 7);
+
+  border-radius: 6px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+@-webkit-keyframes animate-stripes {
+  100% {
+    background-position: -100px 0px;
+  }
+}
+
+@keyframes animate-stripes {
+  100% {
+    background-position: -100px 0px;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+#show {
+  display: block;
+}
+
+.comment_box_overview {
+  position: relative;
+}
+
+.comment_container_box {
+}
+
+form {
+  width: 100%;
+}
+/* 
+.progressbar {
+  counter-reset: step;
+}
+
+.progressbar li {
+  position: relative;
+  list-style: none;
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+
+/* Circles */
+/* .progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #2979ff;
+  display: block;
+  text-align: center;
+  margin: 0 auto 5px auto;
+  border-radius: 50%;
+  background-color: #ff9100;
+  font-size: 80%;
+
+  /* Center # in circle */
+/* line-height: 39px;
+}  */
+/* 
+.progressbar li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: orange;
+  top: 20px; /*half of height Parent (li) */
+/* left: -50%;
+  z-index: -1;
+} */
+/* 
+.progressbar li:first-child:after {
+  content: none;
+} */
+/* 
+.progressbar li.active:before {
+  background: #00e676;
+  content: "✔";
+} */
+/* 
+.progressbar li.active + li:after {
+  background: #00e676;
+} */
+/* .step_progressbar_text {
+  font-size: 80%;
+  text-align: center;
+} */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  /* width: 100%; /* Full width */
+  /* height: 100%; Full height */
+  overflow: auto; /* Enable scroll if needed */
+  /* background-color: rgb(0, 0, 0); Fallback color */
+  /* background-color: rgba(0, 0, 0, 0); */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  /* background-color: #fefefe; */
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  /* border: 1px solid #888; */
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
